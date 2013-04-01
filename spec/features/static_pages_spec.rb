@@ -4,7 +4,7 @@ describe "StaticPages" do
 
   describe "Home Page" do
   	it "should have the h1 'Sample App'" do
-  	  visit '/static_pages/home'
+  	  visit root_path
   	  page.should have_selector('h1', :text => 'Sample App')
   	end
 =begin
@@ -18,7 +18,7 @@ describe "StaticPages" do
 
   describe "Help Page" do
   	it "should have the h1 'Help'" do
-  	  visit '/static_pages/help'
+  	  visit help_path
   	  page.should have_selector('h1', :text => 'Help')
   	end
 =begin
@@ -32,7 +32,7 @@ describe "StaticPages" do
 
   describe "About page" do
     it "should have the h1 'About Us'" do
-      visit '/static_pages/about'
+      visit about_path
       page.should have_selector('h1', :text => 'About Us')
     end
 =begin

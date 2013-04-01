@@ -1,0 +1,47 @@
+@import "bootstrap";
+
+$grayMediumLight: #eaeaea;
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-wight: normal;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#logo {
+  font-size: 1.2 em;
+  font-weight: bold;
+  color: $white;
+  padding-top: 9px;
+  letter-spacing: -1px;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  a {
+    color: $gray;
+	&:hover {
+  	  color: $grayDarker;
+	}
+  }
+  p {
+    float:left;
+    font-size: 0.2 em;
+  }
+  ul {
+    font-size: 0.2 em;
+    float: right;
+    list-style: none;
+  }
+}
+
